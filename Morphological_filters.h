@@ -1,6 +1,9 @@
 #ifndef _Morphological_MY_H
 #define _Morphological_MY_H
-
+/***********************************
+author:enjoy_learn@126.com
+edit data:2018-04-09
+***********************************/
 #define RENEW(a,b,c) a=(b *) realloc((b *)(a),(c)*sizeof(b))
 #define max(a,b)    (((a) > (b)) ? (a) : (b))
 #define min(a,b)    (((a) < (b)) ? (a) : (b))
@@ -10,11 +13,11 @@ int min_array( int *dInput,int iSigLen);
 
 int max_array( int *dInput,int iSigLen);
 /**************************************************
-ÊäÈë£ºint InputSignal[]£ºÊäÈë²¨ĞÎ        int Structure[] £º½á¹¹ÔªËØÊı×é
-      int SignalLength£º ²¨ĞÎ³¤¶È        int StructureLength£º½á¹¹³¤¶È     ¿ª±ÕÔËËã±ê¼Ç£ºchar Flag='1'
-Êä³ö£ºint ReturnSignal[]£º
-±à¼­ÈÕÆÚ£º
-¹¦ÄÜ£ºĞÎÌ¬ÂË²¨¿ªÔËËã
+è¾“å…¥ï¼šint InputSignal[]ï¼šè¾“å…¥æ³¢å½¢        int Structure[] ï¼šç»“æ„å…ƒç´ æ•°ç»„
+      int SignalLengthï¼š æ³¢å½¢é•¿åº¦        int StructureLengthï¼šç»“æ„é•¿åº¦     å¼€é—­è¿ç®—æ ‡è®°ï¼šchar Flag='1'
+è¾“å‡ºï¼šint ReturnSignal[]ï¼š
+ç¼–è¾‘æ—¥æœŸï¼š
+åŠŸèƒ½ï¼šå½¢æ€æ»¤æ³¢å¼€è¿ç®—
 *****************************************************/
 void kaibilvbo(int InputSignal[],int Structure[] ,int SignalLength,int StructureLength, char Flag,int ReturnSignal[]);
 
